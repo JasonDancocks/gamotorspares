@@ -10,8 +10,6 @@ require "rvm/capistrano"
 
 set :rvm_ruby_string, :local        # use the same ruby as used locally for deployment
 
-
-require 'capistrano/postgresql'
 require 'capistrano/passenger'
 require 'capistrano/secrets_yml'
 
