@@ -38,4 +38,5 @@ group :development do
   gem 'capistrano-passenger'
   gem 'rvm-capistrano'
   gem 'capistrano-safe-deploy-to', '~> 1.1.1'
+  gem 'capistrano-secrets-yml', '~> 1.0.0'
 end
