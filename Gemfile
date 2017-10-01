@@ -37,4 +37,5 @@ group :development do
   gem 'capistrano-passenger'
   gem 'rvm-capistrano'
   gem 'capistrano-secrets-yml', '~> 1.0.0'
+  gem 'capistrano-rvm'
 end

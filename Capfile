@@ -6,6 +6,7 @@ require "capistrano/deploy"
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 require 'capistrano/rails'
+require 'capistrano/rvm'
 require "rvm/capistrano"
 
 set :rvm_ruby_string, :local        # use the same ruby as used locally for deployment
