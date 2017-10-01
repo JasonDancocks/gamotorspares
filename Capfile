@@ -12,8 +12,6 @@ set :rvm_ruby_string, :local        # use the same ruby as used locally for depl
 
 
 require 'capistrano/postgresql'
-require 'capistrano/safe_deploy_to'
-
 require 'capistrano/passenger'
 require 'capistrano/secrets_yml'
 
