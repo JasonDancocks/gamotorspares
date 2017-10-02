@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gamotorspares</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title>GA Motorspares</title>
+    <%= render "layouts/rails_defaults"%>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orbitron" rel="stylesheet">
   </head>
 
   <body>
+    <%= render "layouts/flash" %>
+    <%= render "layouts/header" %>
+    <%= render "layouts/navbar" %>
     <%= yield %>
+    <%= render "layouts/footer"%>
+    <%= debug(params) if Rails.env.development? %>
   </body>
 </html>

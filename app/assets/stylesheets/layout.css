@@ -1,0 +1,61 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+#logo-container {
+    font-family: 'Orbitron', sans-serif;
+    padding-left: 30px;
+}
+
+#tagline {
+    margin-top: -20px;
+}
+
+#phone-num {
+    padding-right: 30px;
+}
+
+#phone-num, 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #144B64;
+    padding: 20px;  
+}
+#navbar a {
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+#logo{
+    color: #144B64;
+    
+}
+#phone-num, #tagline{
+    color: #05143A;
+}
+
+footer {
+    padding: 30px;
+    background: #144B64;
+}
+
