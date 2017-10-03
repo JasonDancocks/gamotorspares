@@ -11,8 +11,6 @@ html {
 header {
     display: flex;
     justify-content: space-between;
-
-    
 }
 
 #logo-container {
@@ -28,7 +26,7 @@ header {
     padding-right: 30px;
 }
 
-#phone-num, 
+#phone-num,
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -39,23 +37,49 @@ body {
     justify-content: space-between;
     width: 100%;
     background: #144B64;
-    padding: 20px;  
+    padding: 20px;
+    font-size: 14pt;
 }
-#navbar a {
+
+#navbar a,
+footer a {
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     color: white;
+    text-align: center;
 }
-#logo{
+
+#logo {
     color: #144B64;
-    
 }
-#phone-num, #tagline{
+
+#phone-num,
+#tagline {
     color: #05143A;
 }
 
 footer {
     padding: 30px;
     background: #144B64;
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
 
+.fa {
+    margin-left: 10px;
+}
+
+#sitemap a {
+    margin: 10px;
+    font-size: 10pt;
+}
+
+#top-row {
+    margin-bottom: 10px;
+}
+
+#sitemap {
+    display: flex;
+    justify-content: space-between;
+}

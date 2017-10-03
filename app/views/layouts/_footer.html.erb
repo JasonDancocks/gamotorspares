@@ -1,3 +1,21 @@
 <footer>
-this is the footer
+<div id="copyright">
+© GA Motor Spares <%= Date.current.year %>
+</div>
+<div id="sitemap">
+   
+    <%= link_to 'Home', "#", id: "home-footer" %>
+    <%= link_to 'About', "#", id: "about-footer" %> 
+    
+    
+    
+    <%= link_to 'Breaking', "#", id: "breaking-footer" %> 
+    <%= link_to 'Scrap', "#", id: "scrap-footer" %>  
+    <%= link_to 'Parts', "#", id: "parts-footer" %> 
+    <%= link_to 'Contact', "#", id: "contact-footer" %> 
+</div>
+<div id="social">
+    <a id="facebook" href="#"><%= fa_icon "facebook-square 2x"%></a>
+    <a id="twitter"href="#"><%= fa_icon "twitter-square 2x"%></a>
+    </div>
 </footer>

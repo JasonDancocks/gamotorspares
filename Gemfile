@@ -39,3 +39,5 @@ group :development do
   gem 'capistrano-secrets-yml', '~> 1.0.0'
   gem 'capistrano-rvm'
 end
+
+gem "font-awesome-rails"
