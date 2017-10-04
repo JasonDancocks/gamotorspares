@@ -1,0 +1,59 @@
+#main-content {
+    display: flex;
+    
+    justify-content: center;
+    margin: 10px;
+    height: 70%;
+}
+
+#pitch-container {
+    width: 70%;
+    background-image: url("yard.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#pitch-text {
+    
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    font-weight:900;
+    text-shadow: 0px 0px 3px #000;
+    padding : 10px;
+   
+}
+.link-header {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+#link-container {
+    display: flex;
+    flex-flow: column;
+}
+
+#breaking-box,
+#parts-box,
+#scrap-box {
+    flex: 1;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 40px;
+    background-color: #144B64;
+    color:white;
+}
+
+#scrap-box{
+    margin-bottom: 0;
+}
+
+
+body, body a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
