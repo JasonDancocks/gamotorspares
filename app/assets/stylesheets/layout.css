@@ -8,17 +8,54 @@ html {
     box-sizing: border-box;
 }
 
-header {
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.flex-space-between{
     display: flex;
     justify-content: space-between;
 }
 
-#opening {
+.font-2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.font-1 {
+
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-3 {
+    font-family: 'Open Sans', sans-serif;
+}
+.fonts {
+
+
+font-family: 'Encode Sans Expanded', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.text-1 {
+    color: #05143A ;
+}
+
+.text-2 {
+    color: white;
+}
+
+.text-3 {
     color: #144B64;
 }
 
+
+.bg-main {
+    background: #144B64;
+}
+
 #logo-container {
-    font-family: 'Orbitron', sans-serif;
     padding-left: 30px;
 }
 
@@ -34,48 +71,32 @@ header {
     padding-right: 30px;
 }
 
-#phone-num,
-body,
-#opening {
-    font-family: 'Open Sans', sans-serif;
-}
+
 
 #navbar {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
-    background: #144B64;
+ 
     padding: 20px;
     font-size: 14pt;
 }
 
 #navbar a,
 footer a {
-    text-decoration: none;
-    font-family: 'Orbitron', sans-serif;
+    
     color: white;
-    text-align: center;
+  
 }
 
 #logo {
     color: #144B64;
 }
 
-#phone-num,
-#tagline {
-    color: #05143A;
-}
-
 footer {
     padding: 10px;
-    background: #144B64;
     color: white;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-   
-    width:100%;
+    width: 100%;
 }
 
 .fa {
@@ -85,9 +106,4 @@ footer {
 #sitemap a {
     margin: 10px;
     font-size: 12pt;
-}
-
-#sitemap {
-    display: flex;
-    justify-content: space-between;
 }

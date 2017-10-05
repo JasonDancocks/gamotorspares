@@ -1,12 +1,17 @@
-<footer>
-<div id="copyright">
-© GA Motor Spares <%= Date.current.year %>
-</div>
-<div id="sitemap">
-  <%= render 'layouts/links'%>
-</div>
-<div id="social">
-    <a id="facebook" target="_blank"  href="https://www.facebook.com/ga.motorspares/"><%= fa_icon "facebook-square 2x"%></a>
-    <a id="twitter" target="_blank" href="#"><%= fa_icon "twitter-square 2x"%></a>
-    </div>
+<footer class="flex-space-between bg-main">
+  <div id="copyright"class="font-1">
+    © GA Motor Spares
+    <%= Date.current.year %>
+  </div>
+  <div id="sitemap" class=" font-2">
+    <%= render 'layouts/links'%>
+  </div>
+  <div id="social">
+    <a id="facebook" target="_blank" href="https://www.facebook.com/ga.motorspares/">
+      <%= fa_icon "facebook-square 2x"%>
+    </a>
+    <a id="twitter" target="_blank" href="#">
+      <%= fa_icon "twitter-square 2x"%>
+    </a>
+  </div>
 </footer>
