@@ -2,12 +2,14 @@
     display: flex;
     
     justify-content: center;
-    margin: 10px;
+   margin: 10px 0px 10px 0px;
     height: 70%;
+    width: 100%;
 }
 
 #pitch-container {
     width: 70%;
+    height: 554px;
     background-image: url(<%= asset_path 'yard.jpg' %>);
     background-repeat: no-repeat;
     display: flex;
@@ -31,17 +33,22 @@
 }
 
 #link-container {
+    width: 30%;
     display: flex;
     flex-flow: column;
+  
 }
 
 #breaking-box,
 #parts-box,
 #scrap-box {
     flex: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
     margin-bottom: 10px;
-    padding: 40px;
+    vertical-align: center;
     background-color: #144B64;
     color:white;
 }
