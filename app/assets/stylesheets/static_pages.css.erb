@@ -1,60 +1,52 @@
-#main-content {
+.flex-center {
     display: flex;
-    
     justify-content: center;
-   margin: 10px 0px 10px 0px;
-    height: 70%;
-    width: 100%;
-    font-size: 14pt;
 }
 
-#pitch-container {
-    width: 70%;
-    height: 554px;
-    background-image: url(<%= asset_path 'yard.jpg' %>);
-    background-repeat: no-repeat;
+.flex-column {
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
-#pitch-text {
-    
-    text-align: center;
-    background: rgba(0,0,0,0.2);
-    color: white;
-    font-weight:900;
-    text-shadow: 0px 0px 3px #000;
-    padding : 10px;
-   
-}
+
+
 .link-header {
     font-weight: bold;
     font-size: 16pt;
 }
-
-#link-container {
-    width: 30%;
-    display: flex;
-    flex-flow: column;
-  
+#main-content {
+    margin: 10px 0px 10px 0px;
+    font-size: 14pt;
 }
 
-#breaking-box,
-#parts-box,
-#scrap-box {
+#pitch-container {
+    flex: 2;
+    background-image: url(<%= asset_path 'yard.jpg' %>);
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#pitch-text {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: 900;
+    text-shadow: 0px 0px 3px #000;
+    padding: 10px;
+}
+
+
+#link-container {
     flex: 1;
-    display:flex;
-    justify-content: center;
+}
+.link-box {
+    flex: 1;
     align-items: center;
     margin-left: 10px;
     margin-bottom: 10px;
-    vertical-align: center;
-    background-color: #144B64;
-    color:white;
+    padding: 3px;
 }
 
-#scrap-box{
+#scrap-box {
     margin-bottom: 0;
 }
-

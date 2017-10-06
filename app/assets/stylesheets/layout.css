@@ -13,33 +13,31 @@ a {
     text-align: center;
 }
 
-.flex-space-between{
+.flex-space-between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.font-1 {
+    font-family: 'Raleway', sans-serif;
 }
 
 .font-2 {
     font-family: 'Orbitron', sans-serif;
 }
 
-.font-1 {
-
-    font-family: 'Raleway', sans-serif;
-}
-
 .font-3 {
     font-family: 'Open Sans', sans-serif;
 }
-.fonts {
 
-
-font-family: 'Encode Sans Expanded', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Poppins', sans-serif;
-}
 .text-1 {
-    color: #05143A ;
+    color: #05143A;
 }
 
 .text-2 {
@@ -50,13 +48,17 @@ font-family: 'Poppins', sans-serif;
     color: #144B64;
 }
 
-
 .bg-main {
     background: #144B64;
 }
 
-#logo-container {
-    padding-left: 30px;
+.text-center {
+    text-align: center;
+}
+
+.opening {
+    font-size: 14pt;
+    font-weight: bold;
 }
 
 #opening-2 {
@@ -67,39 +69,16 @@ font-family: 'Poppins', sans-serif;
     margin-top: -20px;
 }
 
-#phone-num {
-    padding-right: 30px;
-}
-
-
-
 #navbar {
-    align-items: center;
-    width: 100%;
- 
     padding: 20px;
     font-size: 14pt;
 }
 
-#navbar a,
-footer a {
-    
-    color: white;
-  
-}
-
-#logo {
-    color: #144B64;
-}
-
 footer {
-    padding: 10px;
-    color: white;
-    align-items: center;
-    width: 100%;
+    padding: 12px;
 }
 
-.fa {
+#twitter {
     margin-left: 10px;
 }
 
