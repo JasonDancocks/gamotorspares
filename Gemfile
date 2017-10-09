@@ -38,6 +38,8 @@ group :development do
   gem 'rvm-capistrano'
   gem 'capistrano-secrets-yml', '~> 1.0.0'
   gem 'capistrano-rvm'
+
+  gem 'letter_opener'
 end
 
 gem "font-awesome-rails"
