@@ -1,0 +1,47 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 14pt;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.font-1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-2 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.font-3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-1 {
+    color: #05143A;
+}
+
+.text-2 {
+    color: white;
+}
+
+.text-3 {
+    color: #144B64;
+}
+
+.bg-main {
+    background: #144B64;
+}
+
+.text-center {
+    text-align: center;
+}
