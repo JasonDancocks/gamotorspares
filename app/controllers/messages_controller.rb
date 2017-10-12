@@ -1,6 +1,14 @@
 class MessagesController < ApplicationController
-    def new
-        @message = Message.new
+    def contact
+        new_message
+    end
+
+    def scrap
+        new_message
+    end
+
+    def parts
+        new_message
     end
 
     def create
@@ -8,7 +16,7 @@ class MessagesController < ApplicationController
         
         if @message.valid?
             MessageMailer.contact(@message).deliver_now
-            render :create
+            redirect_to root_path
         else
             render :new
         end
@@ -16,9 +24,13 @@ class MessagesController < ApplicationController
     end
 
     private
+    
+    def new_message
+        @message = Message.new
+    end
 
     def message_params
-        params.require(:message).permit(:name,:email, :phone,:body)
+        params.require(:message).permit(:name,:email, :phone,:body, :make, :model)
     end
     
 end

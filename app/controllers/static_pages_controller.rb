@@ -11,4 +11,6 @@ class StaticPagesController < ApplicationController
     def partrequest
     end
 
+   
+
 end

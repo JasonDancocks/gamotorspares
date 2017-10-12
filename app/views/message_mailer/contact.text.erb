@@ -1,1 +1,13 @@
-<%= @body %>
+<%if @message.phone %>
+    <%= @message.phone%>
+<% end%>
+<%if @message.make %>
+    <%= @message.make%>
+<% end%>
+<%if @message.model %>
+    <%= @message.model%>
+<% end%>
+<%if @message.name %>
+    <%= @message.name%>
+<% end%>
+<%= @message.body %>
