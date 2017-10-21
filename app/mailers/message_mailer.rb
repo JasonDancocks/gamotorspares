@@ -1,8 +1,8 @@
 class MessageMailer < ApplicationMailer
     def contact(message)
         @message = message
-        mail to: "to@example.org",
+        mail to: "contact@gamotorspares.com",
              from: message.email,
-             subject: "Test"
+             subject: "New Message"
     end
 end
