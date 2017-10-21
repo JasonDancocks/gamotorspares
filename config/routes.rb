@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   get '/about', to: 'static_pages#about'
-  get '/contact', to: 'static_pages#contact'
-  get '/scrap', to: 'static_pages#scrap'
-  get '/partrequest', to: 'static_pages#partrequest'
+  get '/contact', to: 'messages#contact'
+  get '/scrap', to: 'messages#scrap'
+  get '/parts', to: 'messages#parts'
+  get '/breaking', to: 'static_pages#breaking'
+    
+  resources :messages, only: [:create]
 end

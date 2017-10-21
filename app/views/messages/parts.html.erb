@@ -1,0 +1,13 @@
+<% content_for :title, "Part Request"%>
+    <div class="flex-column">
+        <div class="text-center">
+            <h1> Part Request </h1>
+            <p> Complete the form or call us if you are looking for a specific part.</p>
+
+        </div>
+        <div class="flex-space-between">
+            <div id="parts-text" class="flex-1">
+            </div>
+            <%=render partial: 'messages/form', locals: {contact_type: "parts"}%>
+        </div>
+    </div>

@@ -1,19 +1,20 @@
-<div id="main-content" class="font-1 flex-center">
-    <div id="pitch-container" class="flex-column">
+<% content_for :title, "Specialist Ford Breakers"%>
+<div id="main-content" class=" flex-center">
+    <div id="pitch-container" class="flex-column flex-2">
         <div id="pitch-text">
             <h1 id="pitch-title">Welcome to GA Motor Spares.</h1>
             <h2 id="pitch-body">Established in 1989, we have over 25 years experience as a specialist Ford breaker. Check our current breakers
                 or request the part you need today.</h2>
         </div>
     </div>
-    <div id="link-container" class="flex-column">
+    <div id="link-container" class="flex-column flex-1">
         <%= link_to "#", id: "breaking-box", class:"link-box flex-center bg-main text-2" do%>
-            <div class="link-box">
+            <div class="link-box flex-1">
                 <p class="link-header">Currently Breaking</p>
                 <p class="link-body">View current breakers.</p>
             </div>
         <% end %>
-        <%= link_to partrequest_path, id: "parts-box",class:"link-box flex-center bg-main text-2" do%>
+        <%= link_to parts_path, id: "parts-box",class:"link-box flex-center bg-main text-2" do%>
             <div class="link-box">
                 <p class="link-header">Request a Part </p>
                 <p class="link-body"> Need a specific Ford part? Contact us.</p>

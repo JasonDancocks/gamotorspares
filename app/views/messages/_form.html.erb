@@ -1,0 +1,24 @@
+<div id="contact-form" class="flex-1" >
+        <%= form_for @message, html: {class: "flex-column"} do |f| %>
+            <%= notice %>
+            <%= @message.errors.full_messages.join(', ')%>
+            <%= f.label :name, "Name"%>
+            <%= f.text_field :name, placeholder: 'Enter your name'%>
+            <%= f.label :email, "Email Address"%>
+            <%= f.email_field :email, placeholder: 'Enter your email address'%>
+            <%= f.label :phone, "Phone Number (optional)"%>
+            <%= f.text_field :phone, placeholder: 'If you would prefer us to call you enter your phone number'%>
+            <% if contact_type == "scrap" || contact_type == "parts"%>
+                <%= f.label :make, "Make"%>
+                <%= f.text_field :make, placeholder: 'Enter the make of your car'%>
+                <%= f.label :model, "Model"%>
+                <%= f.text_field :model, placeholder: 'Enter the model of your car'%>
+                <%= f.label :body, "Details"%>
+                <%= f.text_area :body, placeholder: "Enter any details "%> 
+            <% else %>               
+                <%= f.label :body, "Your Message"%>
+                <%= f.text_area :body, placeholder: "Enter your message here"%>
+            <% end %>
+            <%= f.submit "Send"%>
+        <% end%>
+    </div>

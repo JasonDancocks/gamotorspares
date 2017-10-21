@@ -5,13 +5,13 @@ class StaticPagesController < ApplicationController
     def about
     end
 
-    def contact
-    end
-
     def scrap
     end
 
     def partrequest
+    end
+
+    def breaking
     end
 
 end
