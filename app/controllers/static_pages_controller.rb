@@ -11,6 +11,7 @@ class StaticPagesController < ApplicationController
     def partrequest
     end
 
-   
+    def breaking
+    end
 
 end

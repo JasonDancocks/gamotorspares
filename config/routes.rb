@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'messages#contact'
   get '/scrap', to: 'messages#scrap'
   get '/parts', to: 'messages#parts'
+  get '/breaking', to: 'static_pages#breaking'
     
   resources :messages, only: [:create]
 end
