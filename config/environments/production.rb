@@ -88,4 +88,13 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #added
+
+  config.action_mailer.default_url_options = { host: "gamotorspares.com"}
+
+  config.action_mailer.smtp_settings = {
+    address: "smtp-relay.gmail.com",
+    port: 587
+  }
 end
