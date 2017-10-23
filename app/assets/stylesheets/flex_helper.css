@@ -7,6 +7,8 @@
     display: flex;
     flex-flow: column;
 }
+
+
 .flex-space-between {
     display: flex;
     justify-content: space-between;
@@ -17,6 +19,7 @@
     display: flex;
     justify-content: space-around;
 }
+
 
 .flex-1 {
     flex: 1;

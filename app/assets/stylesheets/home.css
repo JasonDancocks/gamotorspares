@@ -1,0 +1,21 @@
+
+.link-header {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+#link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+#pitch-text {
+    margin: 0px 10px 0px 10px;
+}
+.link-box {
+    margin: 0px 10px 0px 10px;
+    padding: 3px;
+}
+
