@@ -3,6 +3,6 @@ class MessageMailer < ApplicationMailer
         @message = message
         mail to: "contact@gamotorspares.com",
              from: message.email,
-             subject: "New Message"
+             subject: "New Message: #{message.contact_type}"
     end
 end

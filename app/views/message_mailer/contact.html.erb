@@ -1,13 +1,22 @@
+<h1> Contact Details </h1>
+<ul>
+<li> Contact Type: <%=@message.contact_type%></li>
+<li> Name : <%= @message.name%></li>
+
+<li> Email : <%= @message.email%></li>
+
 <%if @message.phone %>
-    <%= @message.phone%>
+   <li> Phone : <%= @message.phone%></li>
 <% end%>
+<%if @message.contact_type == "scrap" || @message.contact_type == "parts" %>
 <%if @message.make %>
-    <%= @message.make%>
+    <li> Make : <%= @message.make%></li>
 <% end%>
 <%if @message.model %>
-    <%= @message.model%>
+    <li>Model : <%= @message.model%></li>
 <% end%>
-<%if @message.name %>
-    <%= @message.name%>
-<% end%>
-<%= @message.body %>
+<% end %>
+<li>Message : <%= @message.body %></li>
+
+
+

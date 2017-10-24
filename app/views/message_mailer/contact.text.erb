@@ -1,13 +1,20 @@
+Contact Details
+Name : <%= @message.name%>
+
+Email : <%= @message.email%>
+
 <%if @message.phone %>
-    <%= @message.phone%>
+    Phone : <%= @message.phone%>
 <% end%>
+
+Message : <%= @message.body %>
+
+<%if @message.contact_type == "scrap" || @message.contact_type == "parts" %>
 <%if @message.make %>
-    <%= @message.make%>
+    Make : <%= @message.make%>
 <% end%>
 <%if @message.model %>
-    <%= @message.model%>
+    Model : <%= @message.model%>
 <% end%>
-<%if @message.name %>
-    <%= @message.name%>
-<% end%>
-<%= @message.body %>
+<% end %>
+
