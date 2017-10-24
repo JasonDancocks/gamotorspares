@@ -91,10 +91,19 @@ Rails.application.configure do
 
   #added
 
-  config.action_mailer.default_url_options = { host: "gamotorspares.com"}
-
+ 
+  config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: "smtp-relay.gmail.com",
-    port: 587
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "gamotorspares.com",
+    user_name: ENV["gmail_user"],
+    password: ENV["gmail_password"],
+    authentication: :plain,
+    enable_starttls_auto: true
   }
+
+
+  
+ 
 end
